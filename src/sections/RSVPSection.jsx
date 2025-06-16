@@ -196,17 +196,12 @@ export default function RSVPSection() {
                         transition={{ delay: index * 0.1, duration: 0.5 }}
                       >
                         <div className="flex justify-between items-start">
-                          <p className="font-semibold break-words flex items-center gap-2">
+                          <p className="text-sm break-words flex items-center gap-2">
                             {r.name}
                           </p>
-                          {r.timestamp && (
-                            <p className="text-xs text-white/60 italic whitespace-nowrap ml-2">
-                              {formatDate(r.timestamp)}
-                            </p>
-                          )}
                         </div>
                         {r.message && (
-                          <p className="italic text-white/80 mt-1 break-words">
+                          <p className="italic text-white/80 mt-1 mb-2 break-words">
                             "{r.message}"
                           </p>
                         )}
@@ -217,10 +212,15 @@ export default function RSVPSection() {
                               : "bg-gradient-to-r from-rose-500 to-red-600 text-white border-transparent shadow-md shadow-red-500/30"
                           }`}
                         >
-                          {r.attendance === "yes"
-                            ? "Hadir"
-                            : "Berhalangan"}
+                          {r.attendance === "yes" ? "Hadir" : "Berhalangan"}
                         </span>
+                        <div className="flex justify-end items-start">
+                          {r.timestamp && (
+                            <p className="text-xs text-white/60 italic whitespace-nowrap ml-2">
+                              {formatDate(r.timestamp)}
+                            </p>
+                          )}
+                        </div>
                       </motion.div>
                     ))}
                   </div>
@@ -246,14 +246,9 @@ export default function RSVPSection() {
                           <p className="font-semibold break-words flex items-center gap-2">
                             {r.name}
                           </p>
-                          {r.timestamp && (
-                            <p className="text-xs text-white/60 italic whitespace-nowrap ml-2">
-                              {formatDate(r.timestamp)}
-                            </p>
-                          )}
                         </div>
                         {r.message && (
-                          <p className="italic text-white/80 mt-1 break-words">
+                          <p className="italic text-white/80 mt-1 mb-2 break-words">
                             "{r.message}"
                           </p>
                         )}
@@ -264,10 +259,15 @@ export default function RSVPSection() {
                               : "bg-gradient-to-r from-rose-500 to-red-600 text-white border-transparent shadow-md shadow-red-500/30"
                           }`}
                         >
-                          {r.attendance === "yes"
-                            ? "Hadir"
-                            : "Berhalangan"}
+                          {r.attendance === "yes" ? "Hadir" : "Berhalangan"}
                         </span>
+                        <div className="flex justify-end items-start">
+                          {r.timestamp && (
+                            <p className="text-xs text-white/60 italic whitespace-nowrap ml-2">
+                              {formatDate(r.timestamp)}
+                            </p>
+                          )}
+                        </div>
                       </motion.div>
                     ))}
                   </div>
