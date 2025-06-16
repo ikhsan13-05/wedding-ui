@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility animate-slide {
+  animation: slide 30s linear infinite;
+
+  /* Utility Tailwind sudah mendukung play-state via arbitrary variant */
+  /* Jadi cukup pakai: group-hover:[animation-play-state:paused] */
+}
+
+@layer utilities {
+  /* Tambahkan font kustom di sini kalau mau */
+  .perspective {
+    perspective: 1200px;
+  }
+  .transform-style {
+    transform-style: preserve-3d;
+  }
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  .rotate-x-180 .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Custom Styles for smooth 3D transition */
+  .gallery-container {
+    perspective: 1500px;
+  }
+
+  .gallery-images {
+    display: flex;
+    transform-style: preserve-3d;
+  }
+
+  .gallery-images div {
+    transform: rotateY(0deg);
+    transition: transform 1s;
+  }
+
+  .group:hover .gallery-images div {
+    transform: rotateY(10deg);
+  }
+
+  img {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@layer utilities {
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
