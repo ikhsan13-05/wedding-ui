@@ -218,8 +218,8 @@ export default function RSVPSection() {
                           }`}
                         >
                           {r.attendance === "yes"
-                            ? "✔️ Hadir"
-                            : "❌ Berhalangan"}
+                            ? "Hadir"
+                            : "Berhalangan"}
                         </span>
                       </motion.div>
                     ))}
