@@ -12,7 +12,7 @@ const ThankYouSection = () => {
       <motion.img
         src="/images/wrapper/AV2_7550.JPG" // ganti sesuai path gambar kamu
         alt="Dimas & Ayu"
-        className="w-48 h-48 rounded-full object-cover mx-auto mb-6 border-4 border-pink-400 shadow-lg"
+        className="w-48 h-48 rounded-full object-cover mx-auto mb-6 border-2 border-pink-400 shadow-lg"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
