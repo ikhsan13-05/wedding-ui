@@ -65,7 +65,7 @@ export default function HomeSection() {
           Ulfa & Ihsan
         </h1>
         <p className="text-xl md:3xl text-white mb-2 font-lora text-shadow-black">
-          06 - 07 - 2025
+          12 - 08 - 2025
         </p>
 
         {/* Countdown */}

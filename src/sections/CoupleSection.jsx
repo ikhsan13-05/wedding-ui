@@ -41,7 +41,7 @@ export default function CoupleSection() {
           <CoupleCard
             name="Fitratul Ulfa, S.Pd"
             image="/images/AV2_7569.JPG"
-            quote="Wanita hebat yang penuh kasih, penyayang dan lembut. Memiliki hati yang selalu mendukung dalam suka maupun duka."
+            quote="Putri Pertama dari Bapak Burhan & Ibu Rohana"
             instagramUrl="https://instagram.com/__ulfa21"
           />
         </motion.div>
@@ -69,7 +69,7 @@ export default function CoupleSection() {
           <CoupleCard
             name="Muhammad Ihsan, S.Kom"
             image="/images/AV2_7565.JPG"
-            quote="Pria penyabar dan bijaksana, penuh dedikasi dan tanggung jawab. Siap menempuh kehidupan baru dengan cinta yang tulus."
+            quote="Putra Ketiga dari Bapak Abdul Manan & Ibu Maslifah"
             instagramUrl="https://instagram.com/ikhsanmuhammad13"
           />
         </motion.div>

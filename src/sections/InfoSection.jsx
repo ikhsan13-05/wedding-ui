@@ -13,7 +13,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
       alt={`${title} icon`}
       className="w-14 h-14 object-contain mb-4"
     />
-    <h3 className="text-2xl font-playfair tracking-wide mb-3">{title}</h3>
+    <h3 className="text-3xl font-playfair tracking-wide mb-3">{title}</h3>
     <p className="text-2xl font-playfair tracking-wide">
       {new Date(date).toLocaleDateString("id-ID", {
         weekday: "long",
@@ -33,7 +33,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     <p className="text-sm text-white/80">{address}</p>
 
     {title === "Akad Nikah" ? (
-  <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-800 text-white shadow-md cursor-default">
+  <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-700 text-white shadow-md cursor-default">
     <MapPin size={18} />
     Selesai
   </div>

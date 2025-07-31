@@ -60,7 +60,7 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
             setShouldAutoFlipBack(true);
           }}
         >
-          <p className="mt-6">{quote}</p>
+          <p className="mt-6 text-xl">{quote}</p>
 
           {instagramUrl && (
             <a
