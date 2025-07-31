@@ -13,7 +13,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
       alt={`${title} icon`}
       className="w-14 h-14 object-contain mb-4"
     />
-    <h3 className="text-3xl font-playfair tracking-wide mb-1">{title}</h3>
+    <h3 className="text-2xl font-playfair tracking-wide mb-3">{title}</h3>
     <p className="text-2xl font-playfair tracking-wide">
       {new Date(date).toLocaleDateString("id-ID", {
         weekday: "long",
@@ -79,15 +79,15 @@ const InfoSection = () => {
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
-        {/* <InfoCard
-          title="Akad Nikah"
+        <InfoCard
+          title="Akad Nikah & Resepsi"
           iconSrc="/images/couple-ring1.png"
           date="2025-07-06"
           time="10:00 WITA - Selesai"
           place="MASJID AT-TAQWA"
           address="Desa Kanca, Kec. Parado, Kab. Bima"
           mapLink="https://www.google.com/maps?q=Jl+Mayangkara+Bekasi"
-        /> */}
+        />
         <InfoCard
           title="Resepsi"
           iconSrc="/images/wedding-arch1.png"
