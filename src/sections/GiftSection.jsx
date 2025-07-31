@@ -4,8 +4,8 @@ import { MessageCircle, CreditCard, Gift } from "lucide-react";
 
 // Gambar chip dan logo bank
 const chipImg = "/images/atm/chip.png";
-const briLogo = "/images/atm/Logo-Bank-BRI.png";
-const bniLogo = "/images/atm/Logo Bank Negara Indonesia (BNI).png";
+const briLogo = "/images/atm/logo-bri-transparan.png";
+const bpdLogo = "/images/atm/Logo_Bank_Sulselbar.png";
 
 const GiftCard = ({ bankName, name, number, logo }) => {
   const [copied, setCopied] = useState(false);
@@ -41,9 +41,9 @@ const GiftCard = ({ bankName, name, number, logo }) => {
         <p className="text-xl font-bold tracking-widest mt-1">{number}</p>
         <button
           onClick={copyToClipboard}
-          className="mt-4 hover:bg-pink-500 hover:text-white border rounded-full text-sm px-4 py-2 transition-all"
+          className="mt-4 hover:bg-pink-500 hover:text-white border rounded-full text-sm font-bold px-4 py-2 transition-all"
         >
-          {copied ? "✅ Disalin!" : "Salin Nomor Rekening"}
+          {copied ? "✅ Disalin!" : "Salin No.Rekening"}
         </button>
       </div>
     </motion.div>
@@ -128,16 +128,16 @@ const GiftsSection = () => {
             >
               <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8">
                 <GiftCard
-                  bankName="BRI"
+                  bankName="Bank BRI"
                   name="Muhammad Ihsan"
-                  number="1234 5678 9012 3456"
+                  number="184501002306532"
                   logo={briLogo}
                 />
                 <GiftCard
-                  bankName="BNI"
+                  bankName="Bank Sulselbar"
                   name="Fitratul Ulfa"
-                  number="9876 5432 1098 7654"
-                  logo={bniLogo}
+                  number="1402010000093209"
+                  logo={bpdLogo}
                 />
               </div>
 
@@ -175,7 +175,7 @@ const GiftsSection = () => {
                   </h3>
                   <p className="text-white/80">
                     Nama: Ihsan & Ulfa <br />
-                    Alamat: Jl. Kenangan Indah No. 123, Jakarta Selatan, 12450
+                    Alamat: Jl. Sultan Alauddin 2 Lr.1 No.15 (Kost Aspuri), Kel. Mangasa, Kec. Tamalate, Kota Makassar 
                   </p>
                   <p className="mt-3 text-sm text-white/60">
                     Mohon konfirmasi jika ingin mengirim hadiah fisik. Terima

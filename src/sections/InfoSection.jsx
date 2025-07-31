@@ -32,7 +32,14 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     <p className="text-base font-medium mt-1">{place}</p>
     <p className="text-sm text-white/80">{address}</p>
 
-    {/* <a
+    {title === "Akad Nikah & Resepsi" ? (
+  <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-800 text-white shadow-md cursor-default">
+    <MapPin size={18} />
+    Selesai
+  </div>
+) : (
+
+    <a
       href={mapLink}
       target="_blank"
       rel="noopener noreferrer"
@@ -40,15 +47,16 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     >
       <MapPin size={18} />
       Lihat Lokasi
-    </a> */}
+    </a>
+    )}
 
-    <button
+    {/* <button
       onClick={() => window.open(mapLink, "_blank", "noopener,noreferrer")}
       className="mt-5 inline-flex items-center gap-2 hover:bg-pink-500 hover:text-white border px-5 py-2 rounded-lg shadow-md transition"
     >
       <MapPin size={18} />
       Lihat Lokasi
-    </button>
+    </button> */}
   </motion.div>
 );
 
@@ -86,7 +94,7 @@ const InfoSection = () => {
           time="10:00 WITA - Selesai"
           place="MASJID AT-TAQWA"
           address="Desa Kanca, Kec. Parado, Kab. Bima"
-          mapLink="https://www.google.com/maps?q=Jl+Mayangkara+Bekasi"
+          mapLink=""
         />
         <InfoCard
           title="Resepsi"
