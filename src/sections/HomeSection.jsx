@@ -3,7 +3,7 @@ import { CalendarDays } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HomeSection() {
-  const weddingDate = new Date("2025-07-06T09:00:00"); // waktu akad
+  const weddingDate = new Date("2025-08-12T19:00:00"); // waktu akad
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,

@@ -32,7 +32,7 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
           <img
             src={image}
             alt={name}
-            className="w-64 h-72 object-cover border-pink-400 rounded-full border-3 mb-4"
+            className="w-64 h-72 object-cover rounded-full border-3 mb-4"
             style={{
               borderTopRightRadius: "100px",
               borderBottomRightRadius: "0px",

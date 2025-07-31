@@ -32,7 +32,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     <p className="text-base font-medium mt-1">{place}</p>
     <p className="text-sm text-white/80">{address}</p>
 
-    <a
+    {/* <a
       href={mapLink}
       target="_blank"
       rel="noopener noreferrer"
@@ -40,7 +40,15 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     >
       <MapPin size={18} />
       Lihat Lokasi
-    </a>
+    </a> */}
+
+    <button
+      onClick={() => window.open(mapLink, "_blank", "noopener,noreferrer")}
+      className="mt-5 inline-flex items-center gap-2 hover:bg-pink-500 hover:text-white border px-5 py-2 rounded-lg shadow-md transition"
+    >
+      <MapPin size={18} />
+      Lihat Lokasi
+    </button>
   </motion.div>
 );
 
@@ -71,7 +79,7 @@ const InfoSection = () => {
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
-        <InfoCard
+        {/* <InfoCard
           title="Akad Nikah"
           iconSrc="/images/couple-ring1.png"
           date="2025-07-06"
@@ -79,15 +87,15 @@ const InfoSection = () => {
           place="MASJID AT-TAQWA"
           address="Desa Kanca, Kec. Parado, Kab. Bima"
           mapLink="https://www.google.com/maps?q=Jl+Mayangkara+Bekasi"
-        />
+        /> */}
         <InfoCard
           title="Resepsi"
           iconSrc="/images/wedding-arch1.png"
-          date="2025-07-06"
-          time="13:30 - 20:00 WITA"
-          place="LAPANGAN BOLA PUSTAKA"
-          address="Desa Kanca, Kec. Parado, Kab. Bima"
-          mapLink="https://www.google.com/maps?q=Gedung+Bahagia+Bekasi"
+          date="2025-08-12"
+          time="19:00 - 21:30 WITA"
+          place="Gedung Graha Nur Tasnim"
+          address="Jl. Letjen Hertasning No.84 Makassar"
+          mapLink="https://maps.app.goo.gl/2dHRyZzkecaTBT6u8"
         />
       </div>
     </section>

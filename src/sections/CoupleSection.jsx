@@ -70,7 +70,7 @@ export default function CoupleSection() {
             name="Muhammad Ihsan, S.Kom"
             image="/images/AV2_7565.JPG"
             quote="Pria penyabar dan bijaksana, penuh dedikasi dan tanggung jawab. Siap menempuh kehidupan baru dengan cinta yang tulus."
-            instagramUrl="https://instagram.com/"
+            instagramUrl="https://instagram.com/ikhsanmuhammad13"
           />
         </motion.div>
       </div>
