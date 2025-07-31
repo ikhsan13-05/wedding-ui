@@ -32,7 +32,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     <p className="text-base font-medium mt-1">{place}</p>
     <p className="text-sm text-white/80">{address}</p>
 
-    {title === "Akad Nikah & Resepsi" ? (
+    {title === "Akad Nikah" ? (
   <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-800 text-white shadow-md cursor-default">
     <MapPin size={18} />
     Selesai
@@ -88,7 +88,7 @@ const InfoSection = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-4xl mx-auto">
         <InfoCard
-          title="Akad Nikah & Resepsi"
+          title="Akad Nikah"
           iconSrc="/images/couple-ring1.png"
           date="2025-07-06"
           time="10:00 WITA - Selesai"
