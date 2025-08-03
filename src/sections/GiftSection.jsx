@@ -133,12 +133,12 @@ const GiftsSection = () => {
                   number="184501002306532"
                   logo={briLogo}
                 />
-                <GiftCard
-                  bankName="Bank Sulselbar"
-                  name="Fitratul Ulfa"
-                  number="1402010000093209"
-                  logo={bpdLogo}
-                />
+                {/* <GiftCard
+                  // bankName="Bank Sulselbar"
+                  // name="Fitratul Ulfa"
+                  // number="1402010000093209"
+                  // logo={bpdLogo}
+                /> */}
               </div>
 
               {/* ✅ Tombol Konfirmasi WA */}

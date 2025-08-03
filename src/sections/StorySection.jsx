@@ -5,13 +5,13 @@ const timeline = [
     year: "2019",
     title: "Pertemuan Pertama",
     desc: "Pertemuan pertama kami terjadi pada bulan April 2019, saat sebuah kegiatan Adiwiyata antar sekolah diadakan. Kala itu, kami sama-sama bertugas sebagai staf tata usaha, mewakili dua sekolah yang berbeda. Tidak ada yang menyangka bahwa pertemuan singkat di ruang administrasi akan menjadi awal dari kisah yang lebih panjang. Sejak saat itu, komunikasi kami terus terjalin. Dari hal-hal sederhana seperti bertukar informasi antar sekolah, hingga akhirnya mulai saling menunggu kabar satu sama lain. Siapa sangka, dari sebuah tugas administratif biasa, tumbuh kisah luar biasa yang membawa kami sampai di titik ini.",
-    image: "/images/gallery/memori1.jpg",
+    image: "/images/gallery/memori6.jpg",
   },
   {
     year: "2020",
     title: "Menjalin Hubungan",
     desc: "Setelah pertemuan pertama itu, komunikasi kami semakin intens. Awalnya hanya soal pekerjaan, bertanya tentang format laporan, berbagi jadwal kegiatan sekolah—namun perlahan, obrolan kami mulai menyentuh hal-hal pribadi. Mulai dari makanan favorit, cerita masa sekolah, hingga mimpi-mimpi sederhana tentang masa depan. Waktu berjalan, dan kami mulai menyadari ada rasa nyaman yang tumbuh. Tak ada pengakuan yang muluk, hanya perhatian kecil yang konsisten seperti pesan singkat setiap pagi, tawa di sela kesibukan, dan doa-doa diam-diam yang saling terucap. Akhirnya, kami berdua sama-sama mengakui bahwa ini bukan sekadar kebetulan. Bahwa mungkin, Tuhan mempertemukan kami bukan hanya untuk bekerja sama, tapi untuk saling melengkapi satu sama lain.",
-    image: "/images/gallery/memori3.jpg",
+    image: "/images/gallery/memori7.jpg",
   },
   {
     year: "2024",
