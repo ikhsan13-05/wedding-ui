@@ -37,7 +37,7 @@ export default function HomeSection() {
       id="home"
       className="relative w-full h-screen flex items-end justify-center text-white"
       style={{
-        backgroundImage: "url('/images/wrapper/bg-home.jpg')",
+        backgroundImage: "url('/images/wrapper/gambar2.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -97,7 +97,7 @@ export default function HomeSection() {
           </button>
         ) : (
           <a
-            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Ihsan+%26+Ulfa&dates=20250706T020000Z/20250706T050000Z&details=Acara+Pernikahan+Ihsan+dan+Ulfa&location=Jl.+Kenangan+Indah+No.+123,+Jakarta&sf=true&output=xml"
+            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Ihsan+%26+Ulfa&dates=20250812T110000Z/20250812T133000Z&details=Acara+Resepsi+Pernikahan+Ihsan+dan+Ulfa&location=Jl.+Letjen+Hertasning+No.+84,+Makassar&sf=true&output=xml"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-b-2 text-white hover:bg-pink-500 hover:text-white transition-all"

@@ -11,7 +11,7 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
     if (isFlipped && shouldAutoFlipBack) {
       timerRef.current = setTimeout(() => {
         setIsFlipped(false);
-      }, 4000);
+      }, 3000);
     }
 
     return () => clearTimeout(timerRef.current);

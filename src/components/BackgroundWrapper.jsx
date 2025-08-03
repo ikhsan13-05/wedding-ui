@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 const bgImages = [
   "/images/wrapper/gambar1.jpg",
-  "/images/wrapper/gambar2.jpg",
+  "/images/wrapper/bg-home.jpg",
   "/images/wrapper/gambar3.jpg",
   "/images/wrapper/gambar4.jpg",
   "/images/wrapper/gambar5.jpg",
