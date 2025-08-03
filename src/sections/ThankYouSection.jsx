@@ -10,8 +10,8 @@ const ThankYouSection = () => {
     >
       {/* Foto Mempelai */}
       <motion.img
-        src="/images/wrapper/AV2_7550.JPG" // ganti sesuai path gambar kamu
-        alt="Dimas & Ayu"
+        src="/images/wrapper/gambar6.jpg" // ganti sesuai path gambar kamu
+        alt="Ihsan & Ulfa"
         className="w-48 h-48 rounded-full object-cover mx-auto mb-6 border-2 border-pink-400 shadow-lg"
         initial={{ opacity: 0, scale: 0.8 }}
         whileInView={{ opacity: 1, scale: 1 }}

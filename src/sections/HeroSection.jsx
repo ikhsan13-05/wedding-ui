@@ -146,7 +146,7 @@ export default function HeroSection({ onOpenInvitation }) {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           className="relative w-full h-screen flex flex-col items-center justify-center text-white overflow-hidden"
           style={{
-            backgroundImage: "url('/images/bg.jpg')",
+            backgroundImage: "url('')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
