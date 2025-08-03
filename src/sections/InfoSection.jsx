@@ -101,7 +101,7 @@ const InfoSection = () => {
           iconSrc="/images/wedding-arch1.png"
           date="2025-08-12"
           time="19:00 - 21:30 WITA"
-          place="Gedung Graha Nur Tasnim"
+          place="GEDUNG GRAHA NUR TASNIM"
           address="Jl. Letjen Hertasning No.84 Makassar"
           mapLink="https://maps.app.goo.gl/2dHRyZzkecaTBT6u8"
         />

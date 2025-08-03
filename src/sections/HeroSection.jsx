@@ -151,7 +151,7 @@ export default function HeroSection({ onOpenInvitation }) {
             backgroundPosition: "center",
           }}
         >
-          <div className="absolute inset-0 bg-black/40 z-0" />
+          <div className="absolute inset-0 bg-black/20 z-0" />
           <div className="relative z-10 text-center max-w-2xl mt-15">
             <motion.p
               initial={{ opacity: 0, y: -10 }}

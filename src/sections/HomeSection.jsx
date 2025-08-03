@@ -43,7 +43,7 @@ export default function HomeSection() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/50" />
 
       {/* Konten */}
       <motion.div
