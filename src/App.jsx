@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackgroundWrapper from "./components/BackgroundWrapper";
-import AutoScrollControl from "./components/AutoScrollControl";
+import ScrollControl from "./components/ScrollControl";
 import HeroSection from "./sections/HeroSection";
 import HomeSection from "./sections/HomeSection";
 import CoupleSection from "./sections/CoupleSection";
@@ -18,11 +18,13 @@ import Footer from "./components/Footer";
 
 function App() {
   const [isOpened, setIsOpened] = useState(false);
+  const [autoScroll, setAutoScroll] = useState(false);
   const audioRef = useRef(null);
   const homeRef = useRef(null);
 
   const handleOpenInvitation = () => {
     setIsOpened(true);
+    setAutoScroll(true);
     setTimeout(() => {
       homeRef.current?.scrollIntoView({ behavior: "smooth" });
       audioRef.current?.play();
@@ -40,6 +42,7 @@ function App() {
         {!isOpened && <HeroSection onOpenInvitation={handleOpenInvitation} />}
         {isOpened && (
           <>
+            <ScrollControl autoStart={autoScroll} />
             <HomeSection ref={homeRef} />
             <CoupleSection />
             <InfoSection />
@@ -50,10 +53,9 @@ function App() {
             <ThankYouSection />
             <BackToTopButton />
             <Footer />
-            <AutoScrollControl />
+            <MusicPlayer playOnOpen={isOpened} />
           </>
         )}
-        <MusicPlayer playOnOpen={isOpened} />
       </BackgroundWrapper>
     </div>
   );
