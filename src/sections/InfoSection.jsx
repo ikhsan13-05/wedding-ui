@@ -33,21 +33,20 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
     <p className="text-sm text-white/80">{address}</p>
 
     {title === "Akad Nikah" ? (
-  <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-700 text-white shadow-md cursor-default">
-    <MapPin size={18} />
-    Selesai
-  </div>
-) : (
-
-    <a
-      href={mapLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="mt-5 inline-flex items-center gap-2 hover:bg-pink-500 hover:text-white border px-5 py-2 rounded-lg shadow-md transition"
-    >
-      <MapPin size={18} />
-      Lihat Lokasi
-    </a>
+      <div className="mt-5 inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-pink-700 text-white shadow-md cursor-default">
+        <MapPin size={18} />
+        Selesai
+      </div>
+    ) : (
+      <a
+        href={mapLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-5 inline-flex items-center gap-2 hover:bg-pink-500 hover:text-white border px-5 py-2 rounded-lg shadow-md transition"
+      >
+        <MapPin size={18} />
+        Lihat Lokasi
+      </a>
     )}
 
     {/* <button
@@ -63,7 +62,7 @@ const InfoCard = ({ title, iconSrc, date, time, place, address, mapLink }) => (
 const InfoSection = () => {
   return (
     <section
-      id="info"
+      id="info-section"
       className="py-20 px-4 bg-gradient-to-b from-black/50 via-pink-700/60 to-black/80 text-white rounded-xl"
     >
       <motion.div
@@ -80,7 +79,13 @@ const InfoSection = () => {
             Acara
           </span>
         </div>
-        <p className="text-md md:text-xl text-white/80 max-w-xl mx-auto font-playfair mt-4">
+
+        <img
+          src="/images/bismillah1.png"
+          alt="Inisial"
+          className="relative left-1/2 transform -translate-x-1/2 z-20 w-[200px] md:w-[350px]"
+        />
+        <p className="text-md md:text-xl text-white max-w-xl mx-auto font-playfair mt-3">
           Dengan memohon rahmat dan ridho Allah SWT, kami mengundang
           Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
         </p>

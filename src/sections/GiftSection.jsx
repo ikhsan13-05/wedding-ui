@@ -18,7 +18,7 @@ const GiftCard = ({ bankName, name, number, logo }) => {
 
   return (
     <motion.div
-      className="rounded-2xl relative text-black border bg-white/10 backdrop-blur-md p-6 shadow-2xl w-[350px] md:w-[400px] max-w-md overflow-hidden"
+      className="rounded-2xl relative text-white border bg-white/10 backdrop-blur-md p-6 shadow-2xl w-[350px] md:w-[400px] max-w-md overflow-hidden"
       style={
         {
           // backgroundImage: `url('/images/atm/bg1.png')`,
@@ -41,7 +41,7 @@ const GiftCard = ({ bankName, name, number, logo }) => {
         <p className="text-xl font-bold tracking-widest mt-1">{number}</p>
         <button
           onClick={copyToClipboard}
-          className="mt-4 hover:bg-pink-500 hover:text-white border rounded-full text-sm font-bold px-4 py-2 transition-all"
+          className="mt-4 hover:bg-pink-500 hover:text-white border-b-2 rounded-full text-sm font-bold px-4 py-2 transition-all"
         >
           {copied ? "✅ Disalin!" : "Salin No.Rekening"}
         </button>
@@ -79,7 +79,7 @@ const GiftsSection = () => {
             Pernikahan
           </span>
         </div>
-        <p className="mb-6 text-white/80 font-lora">
+        <p className="mb-6 text-white font-lora">
           Kehadiran Anda sudah merupakan hadiah terbaik. Namun jika ingin
           memberikan hadiah, berikut beberapa opsi:
         </p>
@@ -93,7 +93,7 @@ const GiftsSection = () => {
             }}
             className={`px-6 py-2 max-w-fit self-center rounded-full text-sm flex items-center gap-2 justify-center transition-all duration-300 ${
               showTransfer
-                ? "bg-white text-black font-bold"
+                ? "bg-pink-500 text-white font-bold border-b-2"
                 : "text-white hover:bg-pink-500 hover:text-white border rounded-full"
             }`}
           >
@@ -107,7 +107,7 @@ const GiftsSection = () => {
             }}
             className={`px-6 py-2 max-w-fit self-center rounded-full text-sm flex items-center gap-2 justify-center transition-all duration-300 ${
               showAlamat
-                ? "bg-white text-black font-bold"
+                ? "bg-pink-500 text-white font-bold border-b-2"
                 : "text-white hover:bg-pink-500 hover:text-white border"
             }`}
           >
@@ -149,7 +149,16 @@ const GiftsSection = () => {
                 className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full text-center transition-all duration-300 shadow-lg hover:shadow-green-400/40 animate-pulse mt-4"
               >
                 <MessageCircle className="w-5 h-5" />
-                Konfirmasi via WhatsApp
+                Konfirmasi via WhatsApp (Ihsan)
+              </a>
+              <a
+                href="https://wa.me/6285398400079?text=Halo%20Ihsan%20%26%20Ulfa%2C%20saya%20telah%20melakukan%20transfer%20hadiah%20pernikahan.%20Semoga%20menjadi%20keluarga%20yang%20sakinah%2C%20mawaddah%2C%20warahmah.%20Aamiin%20Yaa%20Rabbal%20%27alamin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full text-center transition-all duration-300 shadow-lg hover:shadow-green-400/40 animate-pulse"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Konfirmasi via WhatsApp (Ulfa)
               </a>
             </motion.div>
           )}
@@ -173,11 +182,11 @@ const GiftsSection = () => {
                   <h3 className="text-lg font-semibold mb-2">
                     📦 Kirim ke Alamat
                   </h3>
-                  <p className="text-white/80">
+                  <p className="text-white">
                     Nama: Ihsan & Ulfa <br />
                     Alamat: Jl. Sultan Alauddin 2 Lr.1 No.15 (Kost Aspuri), Kel. Mangasa, Kec. Tamalate, Kota Makassar 
                   </p>
-                  <p className="mt-3 text-sm text-white/60">
+                  <p className="mt-3 text-sm text-white/80">
                     Mohon konfirmasi jika ingin mengirim hadiah fisik. Terima
                     kasih 💕
                   </p>

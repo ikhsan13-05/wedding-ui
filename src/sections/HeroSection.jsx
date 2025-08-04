@@ -117,6 +117,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 
+
 export default function HeroSection({ onOpenInvitation }) {
   const [hide, setHide] = useState(false);
 

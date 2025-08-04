@@ -34,7 +34,7 @@ export default function HomeSection() {
 
   return (
     <section
-      id="home"
+      id="home-section"
       className="relative w-full h-screen flex items-end justify-center text-white"
       style={{
         backgroundImage: "url('/images/wrapper/gambar2.jpg')",
@@ -43,7 +43,7 @@ export default function HomeSection() {
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-black/30" />
 
       {/* Konten */}
       <motion.div

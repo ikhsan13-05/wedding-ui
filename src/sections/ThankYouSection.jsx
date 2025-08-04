@@ -51,7 +51,7 @@ const ThankYouSection = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-lg text-white/80 max-w-xl mx-auto"
+        className="text-lg text-white max-w-xl mx-auto"
       >
         Atas kehadiran dan do'a restu dari Bapak/Ibu/Saudara/i sekalian.
       </motion.p>
@@ -60,7 +60,7 @@ const ThankYouSection = () => {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-lg text-white/80 max-w-xl mx-auto my-10"
+        className="text-lg text-white max-w-xl mx-auto my-10"
       >
         <h2 className="italic">Kami yang Berbahagia</h2>
         <h1 className="text-5xl font-meaculpa text-white md:text-7xl tracking-wide mb-6 text-shadow-black mt-3">

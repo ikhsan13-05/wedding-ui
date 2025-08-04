@@ -14,7 +14,7 @@ export default function BackToTopButton() {
   }, []);
 
   const scrollToTop = () => {
-    const target = document.getElementById("home");
+    const target = document.getElementById("home-section");
     if (target) {
       target.scrollIntoView({ behavior: "smooth" });
     }

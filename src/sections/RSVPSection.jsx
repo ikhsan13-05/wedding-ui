@@ -95,7 +95,10 @@ export default function RSVPSection() {
   };
 
   return (
-    <section className="py-16 px-4 max-w mx-auto rounded-xl text-white">
+    <section
+      id="rsvp-section"
+      className="py-16 px-4 max-w mx-auto rounded-xl text-white"
+    >
       <div className="relative inline-block mb-12 text-center w-full">
         <h2 className="text-white text-[40px] md:text-[64px] font-serif z-10 relative text-shadow-white text-shadow-lg/30">
           Konfirmasi

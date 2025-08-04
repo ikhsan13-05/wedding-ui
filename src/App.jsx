@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BackgroundWrapper from "./components/BackgroundWrapper";
+import AutoScrollControl from "./components/AutoScrollControl";
 import HeroSection from "./sections/HeroSection";
 import HomeSection from "./sections/HomeSection";
 import CoupleSection from "./sections/CoupleSection";
@@ -49,6 +50,7 @@ function App() {
             <ThankYouSection />
             <BackToTopButton />
             <Footer />
+            <AutoScrollControl />
           </>
         )}
         <MusicPlayer playOnOpen={isOpened} />

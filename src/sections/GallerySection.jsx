@@ -21,7 +21,10 @@ export default function GallerySection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="bg-gradient-to-b from-black/50 via-pink-700/60 to-black/80 rounded-md text-white py-16 px-4 max-w mx-auto my-10">
+    <section
+      id="gallery-section"
+      className="bg-gradient-to-b from-black/50 via-pink-700/60 to-black/80 rounded-md text-white py-16 px-4 max-w mx-auto my-10"
+    >
       <div className="text-center mb-12">
         <div className="relative inline-block mb-16">
           <h2 className="text-white text-[40px] md:text-[64px] font-playfair z-10 text-shadow-white text-shadow-lg/30 relative">
@@ -31,7 +34,7 @@ export default function GallerySection() {
             Prewed
           </span>
         </div>
-        <p className="text-white/70 max-w-xl mx-auto mt-2">
+        <p className="text-white max-w-xl mx-auto mt-2">
           Momen-momen yang mengiringi langkah kami menuju hari bahagia
         </p>
       </div>

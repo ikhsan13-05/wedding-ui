@@ -23,7 +23,10 @@ const timeline = [
 
 export default function StorySection() {
   return (
-    <section className="py-16 px-4 rounded-xl max-w mx-auto my-10">
+    <section
+      id="story-section"
+      className="py-16 px-4 rounded-xl max-w mx-auto my-10"
+    >
       <div className="text-center mb-16">
         <div className="relative inline-block mb-16">
           <h2 className="text-white text-[40px] md:text-[64px] font-playfair z-10 relative text-shadow-white text-shadow-lg/30">
@@ -68,8 +71,12 @@ export default function StorySection() {
                 <div className="text-pink-400 font-bold text-md font-merienda mb-1">
                   {item.year}
                 </div>
-                <h3 className="text-lg font-semibold font-lora">{item.title}</h3>
-                <p className="text-sm text-justify text-white font-lora mt-1">{item.desc}</p>
+                <h3 className="text-lg font-semibold font-lora">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-justify text-white font-lora mt-1">
+                  {item.desc}
+                </p>
               </div>
             </motion.div>
           ))}
