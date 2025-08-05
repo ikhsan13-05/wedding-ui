@@ -42,7 +42,7 @@ function App() {
         {!isOpened && <HeroSection onOpenInvitation={handleOpenInvitation} />}
         {isOpened && (
           <>
-            <ScrollControl autoStart={autoScroll} />
+            {/* <ScrollControl autoStart={autoScroll} /> */}
             <HomeSection ref={homeRef} />
             <CoupleSection />
             <InfoSection />

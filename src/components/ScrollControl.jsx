@@ -16,7 +16,7 @@ export default function ScrollControl({ autoStart = false }) {
   useEffect(() => {
     if (isScrolling) {
       intervalRef.current = setInterval(() => {
-        window.scrollBy({ top: 3, behavior: "smooth" });
+        window.scrollBy({ top: 2, behavior: "smooth" });
 
         if (window.innerHeight + window.scrollY >= document.body.scrollHeight) {
           clearInterval(intervalRef.current);

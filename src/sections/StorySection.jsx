@@ -4,7 +4,7 @@ const timeline = [
   {
     year: "2019",
     title: "Pertemuan Pertama",
-    desc: "Pertemuan pertama kami terjadi pada bulan April 2019, saat sebuah kegiatan Adiwiyata antar sekolah diadakan. Kala itu, kami sama-sama bertugas sebagai staf tata usaha, mewakili dua sekolah yang berbeda. Tidak ada yang menyangka bahwa pertemuan singkat di ruang administrasi akan menjadi awal dari kisah yang lebih panjang. Sejak saat itu, komunikasi kami terus terjalin. Dari hal-hal sederhana seperti bertukar informasi antar sekolah, hingga akhirnya mulai saling menunggu kabar satu sama lain. Siapa sangka, dari sebuah tugas administratif biasa, tumbuh kisah luar biasa yang membawa kami sampai di titik ini.",
+    desc: "Pertemuan pertama kami terjadi pada bulan April 2019, saat sebuah kegiatan antar sekolah diadakan. Kala itu, kami sama-sama bertugas sebagai staf tata usaha, mewakili dua sekolah yang berbeda. Tidak ada yang menyangka bahwa pertemuan singkat di ruang administrasi akan menjadi awal dari kisah yang lebih panjang. Sejak saat itu, komunikasi kami terus terjalin. Dari hal-hal sederhana seperti bertukar informasi antar sekolah, hingga akhirnya mulai saling menunggu kabar satu sama lain. Siapa sangka, dari sebuah tugas administratif biasa, tumbuh kisah luar biasa yang membawa kami sampai di titik ini.",
     image: "/images/gallery/memori6.jpg",
   },
   {

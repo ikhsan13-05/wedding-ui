@@ -24,7 +24,7 @@ const MusicPlayer = ({ playOnOpen }) => {
 
   return (
     <>
-      <audio ref={audioRef} src="/audio/weddingsong3.mp3" loop />
+      <audio ref={audioRef} src="" loop /> // /audio/weddingsong3.mp3
       <button
         onClick={togglePlay}
         className={`fixed bottom-6 right-6 z-50 bg-black/30 hover:bg-black/50 backdrop-blur-xs text-white p-3 rounded-full transition"

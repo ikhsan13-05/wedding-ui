@@ -46,67 +46,75 @@ export default function HomeSection() {
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Konten */}
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="relative z-10 w-full max-w-sm sm:max-w-md md:max-w-xl p-3 md:p-6 mb-5 bg-gradient-to-b from-white/10 to-black/30 border-pink-400 border-t-2 border-b-2 rounded-xl md:rounded-3xl backdrop-blur-xs shadow-lg text-center text-shadow-lg/50"
-      >
-        {/* ✅ Inisial dalam bentuk gambar */}
-        {/* <img
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative z-10 w-full max-w-xs sm:max-w-md md:max-w-xl p-3 md:p-6 mb-5 bg-gradient-to-b from-white/10 to-black/30 border-pink-400 border-t-2 border-b-2 rounded-xl md:rounded-3xl backdrop-blur-xs shadow-lg text-center text-shadow-lg/50"
+        >
+          {/* ✅ Inisial dalam bentuk gambar */}
+          {/* <img
           src="/images/logo-wedding2.png"
           alt="Inisial"
           className="absolute -top-80 md:-top-90 left-1/2 transform -translate-x-1/2 z-20 w-[200px] md:w-[350px] opacity-80 shadow-pink-500/90"
         /> */}
-        <p className="text-md md:text-xl text-white mb-2 font-audiowide text-shadow-black">
-          The Wedding Of
-        </p>
-        <h1 className="text-5xl md:text-6xl font-meaculpa text-white tracking-wide mb-4 text-shadow-black">
-          Ulfa & Ihsan
-        </h1>
-        <p className="text-xl md:3xl text-white mb-2 font-lora text-shadow-black">
-          12 - 08 - 2025
-        </p>
+          <p className="text-md md:text-xl text-white mb-2 font-audiowide text-shadow-black">
+            The Wedding Of
+          </p>
+          <h1 className="text-5xl md:text-6xl font-meaculpa text-white tracking-wide mb-4 text-shadow-black">
+            Ulfa & Ihsan
+          </h1>
+          <p className="text-xl md:3xl text-white mb-2 font-lora text-shadow-black">
+            12 - 08 - 2025
+          </p>
 
-        {/* Countdown */}
-        {/* {!eventStarted && ( */}
-        <div className="grid grid-cols-4 gap-4 justify-center items-center text-center text-sm mb-2 text-shadow-black text-shadow-lg/30">
-          <div className="border-b-2 rounded-2xl p-1">
-            <p className="text-xl md:text-2xl font-semibold">{timeLeft.days}</p>
-            <p className="text-white/70">Hari</p>
+          {/* Countdown */}
+          {/* {!eventStarted && ( */}
+          <div className="grid grid-cols-4 gap-4 justify-center items-center text-center text-sm mb-2 text-shadow-black text-shadow-lg/30">
+            <div className="border-b-2 rounded-2xl p-1">
+              <p className="text-xl md:text-2xl font-semibold">
+                {timeLeft.days}
+              </p>
+              <p className="text-white/70">Hari</p>
+            </div>
+            <div className="border-b-2 rounded-3xl p-1">
+              <p className="text-xl md:text-2xl font-semibold">
+                {timeLeft.hours}
+              </p>
+              <p className="text-white/70">Jam</p>
+            </div>
+            <div className="border-b-2 rounded-3xl p-1">
+              <p className="text-xl md:text-2xl font-semibold">
+                {timeLeft.minutes}
+              </p>
+              <p className="text-white/70">Menit</p>
+            </div>
+            <div className="border-b-2 rounded-3xl p-1">
+              <p className="text-xl md:text-2xl font-semibold">
+                {timeLeft.seconds}
+              </p>
+              <p className="text-white/70">Detik</p>
+            </div>
           </div>
-          <div className="border-b-2 rounded-3xl p-1">
-            <p className="text-xl md:text-2xl font-semibold">{timeLeft.hours}</p>
-            <p className="text-white/70">Jam</p>
-          </div>
-          <div className="border-b-2 rounded-3xl p-1">
-            <p className="text-xl md:text-2xl font-semibold">{timeLeft.minutes}</p>
-            <p className="text-white/70">Menit</p>
-          </div>
-          <div className="border-b-2 rounded-3xl p-1">
-            <p className="text-xl md:text-2xl font-semibold">{timeLeft.seconds}</p>
-            <p className="text-white/70">Detik</p>
-          </div>
-        </div>
-        {/* )} */}
+          {/* )} */}
 
-        {/* Tombol */}
-        {eventStarted ? (
-          <button className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-500/80 text-white font-lora cursor-default">
-            Acara Sedang Berlangsung...
-          </button>
-        ) : (
-          <a
-            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Ihsan+%26+Ulfa&dates=20250812T110000Z/20250812T133000Z&details=Acara+Resepsi+Pernikahan+Ihsan+dan+Ulfa&location=Jl.+Letjen+Hertasning+No.+84,+Makassar&sf=true&output=xml"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-b-2 text-white hover:bg-pink-500 hover:text-white transition-all"
-          >
-            <CalendarDays className="w-5 h-5" />
-            Save The Date
-          </a>
-        )}
-      </motion.div>
+          {/* Tombol */}
+          {eventStarted ? (
+            <button className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-pink-500/80 text-white font-lora cursor-default">
+              Acara Sedang Berlangsung...
+            </button>
+          ) : (
+            <a
+              href="https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding+Ihsan+%26+Ulfa&dates=20250812T110000Z/20250812T133000Z&details=Acara+Resepsi+Pernikahan+Ihsan+dan+Ulfa&location=Jl.+Letjen+Hertasning+No.+84,+Makassar&sf=true&output=xml"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-2 rounded-full border-b-2 text-white hover:bg-pink-500 hover:text-white transition-all"
+            >
+              <CalendarDays className="w-5 h-5" />
+              Save The Date
+            </a>
+          )}
+        </motion.div>
     </section>
   );
 }
