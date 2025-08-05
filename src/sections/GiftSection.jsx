@@ -134,9 +134,9 @@ const GiftsSection = () => {
               transition={{ duration: 0.5 }}
               key="transfer"
             >
-              <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8">
+              <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 text-shadow-lg/20">
                 <GiftCard
-                  bankName="Bank BRI"
+                  bankName="BRI"
                   name="Muhammad Ihsan"
                   number="184501002306532"
                   logo={briLogo}
