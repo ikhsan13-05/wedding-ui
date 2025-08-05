@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @config '../tailwind.config.js';
 
 /*
@@ -28,7 +28,7 @@
 
 @layer utilities {
   /* Tambahkan font kustom di sini kalau mau */
-  .perspective {
+  /* .perspective {
     perspective: 1200px;
   }
   .transform-style {
@@ -37,12 +37,28 @@
   .rotate-x-180 {
     transform: rotateX(180deg);
   }
-  .rotate-y-180 {
-    transform: rotateY(180deg);
-  }
   .rotate-x-180 .rotate-x-180 {
     transform: rotateX(180deg);
   }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  } */
+
+  .perspective {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
 
   .transform-style-preserve-3d {
     transform-style: preserve-3d;

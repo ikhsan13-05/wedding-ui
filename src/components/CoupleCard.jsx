@@ -6,7 +6,6 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
   const [shouldAutoFlipBack, setShouldAutoFlipBack] = useState(true);
   const timerRef = useRef(null);
 
-  // Auto balik jika tidak dihover
   useEffect(() => {
     if (isFlipped && shouldAutoFlipBack) {
       timerRef.current = setTimeout(() => {
@@ -14,16 +13,20 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
       }, 3000);
     }
 
-    return () => clearTimeout(timerRef.current);
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+      }
+    };
   }, [isFlipped, shouldAutoFlipBack]);
 
   return (
     <div
       className="w-64 h-80 perspective cursor-pointer"
-      onClick={() => setIsFlipped(true)}
+      onClick={() => setIsFlipped((prev) => !prev)}
     >
       <div
-        className={`relative w-full h-full transition-transform duration-700 ease-in-out transform-style preserve-3d ${
+        className={`relative w-full h-full transition-transform duration-700 ease-in-out preserve-3d ${
           isFlipped ? "rotate-y-180" : ""
         }`}
       >
@@ -32,17 +35,15 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
           <img
             src={image}
             alt={name}
-            className="w-64 h-72 object-cover rounded-full border-3 mb-4"
+            className="w-64 h-72 object-cover rounded-[0px_100px_0px_100px] border-3 mb-4"
             style={{
-              borderTopRightRadius: "100px",
-              borderBottomRightRadius: "0px",
-              borderBottomLeftRadius: "100px",
-              borderTopLeftRadius: "0px",
               boxShadow: "8px 8px 20px rgba(85, 120, 60, 0.2)",
             }}
           />
-          <h3 className="text-xl font-merienda text-shadow-black text-shadow-lg/30">{name}</h3>
-          <p className="text-md text-white mt-3 md:block italic">
+          <h3 className="text-xl font-merienda text-shadow-black text-shadow-lg/30">
+            {name}
+          </h3>
+          <p className="text-sm text-white mt-3 md:block italic">
             Klik untuk melihat deskripsi
           </p>
         </div>
@@ -51,12 +52,10 @@ export default function CoupleCard({ name, image, quote, instagramUrl }) {
         <div
           className="absolute w-full h-full bg-black/60 border-pink-500 border-b-2 border-t-2 backdrop-blur-xs text-white rounded-2xl shadow-xl px-6 py-6 text-sm text-center italic transform rotate-y-180 backface-hidden flex flex-col items-center justify-between"
           onMouseEnter={() => {
-            // Hentikan auto flip-back saat dihover
             setShouldAutoFlipBack(false);
             clearTimeout(timerRef.current);
           }}
           onMouseLeave={() => {
-            // Aktifkan kembali auto flip-back
             setShouldAutoFlipBack(true);
           }}
         >
