@@ -86,6 +86,9 @@ const InfoSection = () => {
           className="relative left-1/2 transform -translate-x-1/2 z-20 w-[200px] md:w-[350px]"
         />
         <p className="text-md md:text-xl text-white max-w-xl mx-auto font-playfair mt-3">
+          Assalamu'alaikum Warahmatullah Wabarakatuh
+        </p>
+        <p className="text-md md:text-xl text-white max-w-xl mx-auto font-playfair mt-3">
           Dengan memohon rahmat dan ridho Allah SWT, kami mengundang
           Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami.
         </p>

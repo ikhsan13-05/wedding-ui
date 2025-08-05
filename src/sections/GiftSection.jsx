@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { MessageCircle, CreditCard, Gift } from "lucide-react";
+import { MessageCircle, CreditCard, Gift, Copy } from "lucide-react";
 
 // Gambar chip dan logo bank
 const chipImg = "/images/atm/chip.png";
@@ -41,9 +41,17 @@ const GiftCard = ({ bankName, name, number, logo }) => {
         <p className="text-xl font-bold tracking-widest mt-1">{number}</p>
         <button
           onClick={copyToClipboard}
-          className="mt-4 hover:bg-pink-500 hover:text-white border-b-2 rounded-full text-sm font-bold px-4 py-2 transition-all"
+          className="mt-4 hover:bg-pink-500 hover:text-white border-1 rounded-full text-sm px-4 py-2 transition-all"
         >
-          {copied ? "✅ Disalin!" : "Salin No.Rekening"}
+          {copied ? (
+            <>
+              ✅ <span>Disalin!</span>
+            </>
+          ) : (
+            <>
+              <Copy size={20} />
+            </>
+          )}
         </button>
       </div>
     </motion.div>
@@ -184,7 +192,8 @@ const GiftsSection = () => {
                   </h3>
                   <p className="text-white">
                     Nama: Ihsan & Ulfa <br />
-                    Alamat: Jl. Sultan Alauddin 2 Lr.1 No.15 (Kost Aspuri), Kel. Mangasa, Kec. Tamalate, Kota Makassar 
+                    Alamat: Jl. Sultan Alauddin 2 Lr.1 No.15 (Kost Aspuri), Kel.
+                    Mangasa, Kec. Tamalate, Kota Makassar
                   </p>
                   <p className="mt-3 text-sm text-white/80">
                     Mohon konfirmasi jika ingin mengirim hadiah fisik. Terima

@@ -28,7 +28,7 @@ export default function BackToTopButton() {
       }`}
       aria-label="Kembali ke atas"
     >
-      <ArrowUp size={20} />
+      <ArrowUp size={18} />
     </button>
   );
 }
