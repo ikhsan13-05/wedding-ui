@@ -63,7 +63,7 @@ const ThankYouSection = () => {
         className="text-lg text-white max-w-xl mx-auto my-10"
       >
         <h2 className="italic">Kami yang Berbahagia</h2>
-        <h1 className="text-5xl font-meaculpa text-white md:text-7xl tracking-wide mb-6 text-shadow-black mt-3">
+        <h1 className="text-5xl font-meaculpa text-white md:text-7xl tracking-wide mb-6 mt-3 text-shadow-lg/50">
           Ulfa & Ihsan
         </h1>
       </motion.p>
